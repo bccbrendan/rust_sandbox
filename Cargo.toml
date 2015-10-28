@@ -1,0 +1,10 @@
+[package]
+name = "dummy_os"
+version = "0.1.0"
+authors = ["Brendan Long <bccbrendan@gmail.com>"]
+
+[lib]
+crate-type = ["staticlib"]
+
+[dependencies]
+rlibc = "*"
