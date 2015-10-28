@@ -1,8 +1,12 @@
+# gvim
+*.swp
+
 # Compiled files
 *.o
 *.so
 *.rlib
 *.dll
+/build/
 
 # Executables
 *.exe
