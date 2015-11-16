@@ -5,6 +5,7 @@ section .text
 bits 32
 start:
     mov esp, stack_top
+    mov edi, ebx       ; Move Multiboot info pointer to edi 
 
     call test_multiboot
     call test_cpuid
@@ -129,5 +130,5 @@ p4_table:
 p3_table:
     resb 4069
 stack_bottom:
-    resb 64
+    resb 4096
 stack_top:
